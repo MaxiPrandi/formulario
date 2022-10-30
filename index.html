@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form manda Email-JS</title>
+    <link rel="stylesheet" href="style.css">
+ <!-- link script emailjs  -->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('zdNWE3HbYMhBZwyXA')
+</script>
+</head>
+<body>
+    <form id="form">
+        <div class="field">
+          <label for="from_name">Nombre usuario</label>
+          <input type="text" name="from_name" id="from_name" placeholder="Ingrese su nombre">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message" placeholder="Escriba su mensaje">
+        </div>
+        <div class="field">
+          <label for="email_id">Email usuario</label>
+          <input type="text" name="email_id" id="email_id" placeholder="Ingrese su Email">
+        </div>
+        <input type="submit" id="button" value="Enviar Email" >
+      </form>
+      
+
+      <script src="app.js"></script>
+
+</body>
+</html>
